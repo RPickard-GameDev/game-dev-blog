@@ -16,6 +16,9 @@ permissions:
 
 jobs:
   build:
+    env:
+      PUBLIC_SITE_URL: ${{ secrets.PUBLIC_SITE_URL }}
+      BASE: ${{ secrets.BASE }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout your repository using git
