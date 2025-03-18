@@ -1,10 +1,11 @@
 // src/data/menu.ts
+const base = process.env.VITE_BASE || ''
 
 export const headerMenu = [
-    { name: 'Theme Info', link: '/theme-info' },
-    { name: 'Our Team', link: '/team' },
-    { name: 'Blog', link: '/blog' },
-    { name: 'Style-Guide', link: '/style-guide', showArrow: false,
+    { name: 'Theme Info', link: `/${base}/theme-info` },
+    { name: 'Our Team', link: `/${base}/team` },
+    { name: 'Blog', link: `/${base}/blog` },
+    { name: 'Style-Guide', link: `/${base}/style-guide`, showArrow: false,
         children: [
             { name: 'Typography', link: '/style-guide#typography' },
             { name: 'Colors', link: '/style-guide#colors' },
