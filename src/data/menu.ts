@@ -1,6 +1,6 @@
 // src/data/menu.ts
 
-const base = process.env.BASE || ''
+const base = process.env.VITE_BASE || ''
 
 export const headerMenu = [
     { name: 'Theme Info', link: `${base}/theme-info` },

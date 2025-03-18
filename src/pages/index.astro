@@ -17,10 +17,10 @@ import styleGuideImage from '../assets/images/home/developer.jpg';
 
 const seoTitle = "Modern, High-Performance Astro Theme";
 const seoDescription = "A modern, high-performance Astro theme for developer portfolios and documentation sites.";
-const base = import.meta.env.BASE || "";
+const base = import.meta.env.VITE_BASE || "";
 
 const heroContent = {
-    title: `Hello World Base: ${import.meta.env.BASE}`,
+    title: `Hello World Base: ${import.meta.env.VITE_BASE}`,
     description: 'This is the landing page of my future blog for game dev content',
     backgroundImage: heroImage,
     overlayOpacity: 0.2
