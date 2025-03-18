@@ -1,15 +1,18 @@
 import { defineConfig } from 'astro/config';
 import tailwindcss from '@tailwindcss/vite';
-
 import sitemap from '@astrojs/sitemap';
+import { loadEnv } from "vite";
 
+// Load the environment variables
+const { SITE } = loadEnv(process.env.PUBLIC_SITE_URL, process.cwd(), "");
+const { BASE } = loadEnv(process.env.BASE, process.cwd(), "");
 // Get the site URL from environment variable or use a default for local development
 const site = process.env.PUBLIC_SITE_URL;
 const base = process.env.BASE;
 
 export default defineConfig({
-  site,
-  base,
+  SITE,
+  BASE,
   vite: {
     plugins: [tailwindcss()],
     css: {
