@@ -1,6 +1,6 @@
 // src/data/menu.ts
 
-const base = process.env.GITHUB_BASE || ''
+const base = process.env.BASE || ''
 
 export const headerMenu = [
     { name: 'Theme Info', link: `${base}/theme-info` },
