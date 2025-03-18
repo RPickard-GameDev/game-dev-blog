@@ -8,8 +8,9 @@ const site = process.env.PUBLIC_SITE_URL;
 const base = process.env.GITHUB_BASE;
 
 export default defineConfig({
-  site,
-  base,
+
+  site: "https://robpickard-93.github.io",
+  base: "game-dev-blog",
   vite: {
     plugins: [tailwindcss()],
     css: {
